@@ -69,6 +69,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/amazon/cart/singleBuy/{id}', 'BuyController@singleBuy')->name('singleBuy');
     Route::post('/amazon/cart/singleBuy/{id}', 'BuyController@singleOrder')->name('singleOrder');
     Route::get('/amazon/orders', 'BuyController@buyingOrder')->name('orders');
+    Route::get('/amazon/last', 'BuyController@last');
 });
 
 /* admin */
