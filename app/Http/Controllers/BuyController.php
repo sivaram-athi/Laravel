@@ -46,7 +46,7 @@ class BuyController extends Controller
             $prod->update();
         }
         $cartItem = Cart::with('product')->where("user_id", auth()->user()->id)->delete();
-        return redirect('/amazon');
+        return redirect('amazon/last');
     }
 
     public function singleBuy(Request $request)
@@ -77,7 +77,7 @@ class BuyController extends Controller
                 $prod->quantity = $prod->quantity - $request->qty;
                 $prod->update();
 
-                return redirect('/amazon');
+                return redirect('amazon/last');
             } else {
                 return view('amazon.singleBuy')->withMessage($request->product_quantity . ' only left');
             }
@@ -93,12 +93,24 @@ class BuyController extends Controller
         if (auth()->user()) {
             $categories = Category::all();
             $num = Cart::where('user_id', auth()->user()->id)->count();
-            $orders = Buy::with('products')->where('user_id',auth()->user()->id)->latest()->paginate(3);
+            $orders = Buy::with('products')->where('user_id', auth()->user()->id)->latest()->paginate(3);
             // dd($orders);
-            return  view('amazon.orders',[
+            return view('amazon.orders', [
                 'categories' => $categories,
                 'num' => $num,
-                'orders'=> $orders
+                'orders' => $orders
+            ]);
+        }
+    }
+
+    public function last()
+    {
+        if (auth()->user()) {
+            $categories = Category::all();
+            $num = Cart::where('user_id', auth()->user()->id)->count();
+            return view('amazon.last', [
+                'categories' => $categories,
+                'num' => $num,
             ]);
         }
     }
