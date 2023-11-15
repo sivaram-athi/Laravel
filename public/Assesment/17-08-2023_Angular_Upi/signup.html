@@ -1,0 +1,30 @@
+<div class="container text-center d-flex justify-content-center mt-5 pt-5">
+    <div class="border border-2 rounded-3 p-4 w-50 ">
+        <h2>Sign Up</h2>
+        <form name="frm" class="mt-3">
+            <div>
+                <input type="text" required name="signUpName" ng-model="signUpName" placeholder="Username">
+                <span ng-show="frm.signUpName.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <input type="text" required name="signUpi" ng-model="signUpi" placeholder="UPI">
+                <span ng-show="frm.signUpi.$error.required" class="text-danger">*</span>
+                <div>
+                    <a class="btn btn-light mt-2" ng-click="generate()">generate upi</a>
+                </div>
+            </div>
+            <div class="mt-3">
+                <input type="number" required name="accountNumber" ng-model="accountNumber" placeholder="Account Number">
+                <span ng-show="frm.accountNumber.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <input type="number" required name="accountBalance" ng-model="accountBalance" placeholder=" Amount">
+                <span ng-show="frm.accountBalance.$error.required" class="text-danger">*</span>
+            </div>
+
+            <h5 ng-show="show" class="text-danger mt-2">Please fill all the details</h5>
+
+            <a class="btn btn-info mt-3" ng-click="confirm()">Signup</a>
+        </form>
+    </div>
+</div>

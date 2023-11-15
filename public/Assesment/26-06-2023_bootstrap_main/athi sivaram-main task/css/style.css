@@ -1,0 +1,145 @@
+.section-1{
+    background-color: #a6cd38;
+}
+
+/* .navbar{
+    padding: 25px 78px !important;
+} */
+
+/* .navbar-brand{
+    font-size: 39px !important;
+    font-weight: 500;
+} */
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    /* padding-right: 2.5rem !important; */
+    padding-left: 0.5rem !important;
+}
+
+.nav-item:hover{
+    border-bottom: 4px solid #17bcb0;
+}
+
+.nav-link:hover {
+    color: #07aca0 !important;
+}
+
+.nav-link{
+    font-size: large;
+}
+
+.form-control{
+    /* width: 40% !important; */
+    height: 4rem !important;
+}
+
+/* .section-2{
+    background-color: #f0f1f5;
+} */
+
+ul{
+    list-style: none;
+}
+
+.h-4{
+    border-bottom: 2px dashed black;
+    padding-bottom: 10px;
+}
+
+.column-1{
+    border-bottom: 1px ridge;
+}
+
+/* @media (width < 1200px){
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 39.333333% !important;
+    }
+} */
+
+/* @media (width < 992px){
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 39.333333% !important;
+    }
+} */
+
+.grid-2{
+    height: 200px;
+}
+
+.grid-2 .pt-5{
+    padding-top: 120px !important;
+}
+
+.grid-1{
+    padding-left: 20px !important;
+}
+
+.buttn-1{
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.buttn-2{
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+.btn{
+    float: right;
+}
+
+.h-3{
+    border-bottom: 1px dashed black;
+}
+
+.span-1{
+    float: right;
+}
+
+.para{
+    padding-top: 50px;
+    /* font-size: 40px; */
+}
+
+.Link{
+    padding-left: 60px;
+    text-decoration: none;
+    color: #9edca3;
+}
+.Link:hover{
+    color: #5ec967 !important;
+}
+
+.span-2{
+    border: 6px solid white;
+    border-radius: 50%;
+    height: 46px;
+    width: 48px;
+    display: inline-block;
+}
+.span-3{
+    border: 6px solid white;
+    border-radius: 50%;
+    height: 50px;
+    width: 65px;
+    display: inline-block;
+}
+
+.icon-1{
+    color: #ffffff;
+    padding-left: 7px;
+    padding-top: 17px;
+}
+
+.grid-3{
+    border-right: 1px solid white;
+}
+.footer-1{
+    border-top: 1px solid white;
+}

@@ -1,0 +1,22 @@
+<div class="text-center" >
+    <form name="frm">
+        <h2>Login</h2>
+        <div>
+            <label>Name:</label>
+            <input type="text" class="mt-3 ms-4" name="name1" ng-model="ssss" required>
+            <span ng-show="frm.name1.$error.required">required</span>
+           
+        </div>
+        <div>
+            <label>Name:</label>
+            <input type="password" class="mt-3 ms-4" name="name2" ng-model="nan" minlength="5" required>
+            <span ng-show="frm.name2.$error.required">required</span>
+            <span ng-show="frm.name2.$error.minlength">too short</span>
+            <span ng-show="frm.name2.$error.maxlength">too long</span>
+        </div>
+        <div>
+            <a class="btn btn-success mt-4" ng-click="signUp()" >signUp</a>
+            <a class="btn btn-info mt-4" ng-click="logIn()" >Login</a>
+        </div>
+    </form>
+</div>

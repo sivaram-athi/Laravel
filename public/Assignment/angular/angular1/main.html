@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#!page1">Home</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#!page2">Page 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page3">Page 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page4">Page 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page5">Page 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page6">Page 5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page7">sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page8">shopping cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1 class="text-center" style="background-color:rgb(171, 196, 97)">welcome to main page</h1>
+<div class="container mb-5">
+    <div ng-controller="main">
+        <div>
+            First Name: <input type="text" ng-model="firstName" class="mb-4"><br>
+            Last Name: <input type="text" ng-model="lastName"><br>
+            <br>
+            Full Name: {{firstName + " " + lastName}}
+        </div>
+        <div>
+            <div ng-init="siva='sivaram'">
+                <input type="text" ng-model="siva" class="mb-4 mt-4" >
+                <p>hello:{{siva}}</p>
+            </div>
+        </div>
+        <div>
+            <div ng-init="first=10;second=10">
+                FirstPrice:<input type="number" ng-model="first" class="mb-4">
+                SecondPrice:<input type="number"min="1" ng-model="second">
+                <p>total price is :{{first*second}}</p>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li ng-repeat="x in nam">{{x}}</li>
+            </ul>
+        </div>
+        <div>
+            <input type="text" ng-model="ss" class="mb-4">
+            <div class="alert"
+                ng-class="{'alert-warning': ss.length < character,'alert-success': ss.length > character ,'alert-info': ss.length == character}">
+                <div ng-show="ss.length < character">less than 6 character</div>
+                <div ng-show="ss.length == character"> correct</div>
+                <div ng-show="ss.length>character"> greater than 6 character</div>
+            </div>
+            <p ng-bind="ss"></p>
+        </div>
+        <div>
+            <ul>
+                <li ng-repeat="x in datas">
+                    {{x.name}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

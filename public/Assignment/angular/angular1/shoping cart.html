@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#!page1">Home</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#!page2">Page 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page3">Page 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page4">Page 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page5">Page 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page6">Page 5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page7">sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page8">shopping cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container ">
+
+    <button class="btn btn-success mt-5 w-100" ng-click="balance()">Buy Now</button>
+    <span class="text-center">
+        <h3 class="mt-5">Balance Amount is :{{balance1}}</h3>
+    </span>
+
+    <div class="text-center mt-3">
+        Filter:
+        <input type="text" ng-model="view">
+    </div>
+
+    <div class="mt-5 row d-flex justify-content-around">
+        <div class="col-md-5 border">
+            <div class="border rounded mb-1 mt-2 p-4  border-2px border-dark " ng-repeat="x in datas | filter : view">
+                <img src="" ng-src="{{x.img}}" alt="" class="mt-2 img-fluid mb-2">
+                <h5>{{x.title}}</h5>
+                <p>price:{{x.price}}</p>
+                <button class="btn btn-primary cart mt-3 mb-3" ng-click="add(x.id)">Add to cart</button>
+            </div>
+        </div>
+        <div class="col-md-5 border ">
+            <span class="text-center ">
+                <h3 class="mt-5">Total Amount is :{{price}}</h3>
+            </span>
+            <div id="summa" class="border rounded mb-1 mt-2 p-4  border-2px border-dark " ng-repeat="x in arr">
+                <img src="" ng-src="{{x.img}}" alt="" class="mt-2 img-fluid mb-2">
+                <span class="ms-5">
+                    <h3>Total: <span id="nomb"></span></h3>
+                </span>
+                <h5>{{x.title}}</h5>
+                <p>price: <span> {{x.price}}</span> </p>
+                <input type="number" min="1" ng-model="numb" ng-click="ok($event)">
+                <button class="btn btn-danger" ng-click="total($event)">Ok</button>
+                <button class="btn btn-danger" ng-click="delete($index ,$event)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

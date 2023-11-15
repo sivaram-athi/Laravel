@@ -1,0 +1,47 @@
+<div class="container d-flex justify-content-center mt-5 pt-5">
+    <a class="btn btn-info mt-3 w-25 sss" ng-click="login()">Login </a>
+    <a class="btn btn-primary mt-3 sss w-25 ms-5" ng-click="signup()">Signup </a>
+</div>
+<div class="container text-center d-flex justify-content-center mt-5 pt-5 " ng-hide="login1">
+    <div class="border border-2 rounded-3 p-4 w-50 shadow p-3 mb-5 nn bg-body rounded">
+        <h2>Login</h2>
+        <form name="form" class="mt-3">
+            <div>
+                <label for="loginName">UserName:</label>
+                <input type="text" required name="loginName" ng-model="loginName" placeholder="Enter Your UserName">
+                <span ng-show="form.loginName.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <label for="loginPassword" class="me-1">Password:</label>
+                <input type="password" class="ms-1" required name="loginPassword" ng-model="loginPassword" placeholder="Enter Your UPI">
+                <span ng-show="form.loginPassword.$error.required" class="text-danger">*</span>
+            </div>
+            <h5 class="text-center text-danger mt-2" ng-show="shw">invalid UserName or Password</h5>
+            <a class="btn btn-info mt-3" ng-click="log()">login</a>
+        </form>
+    </div>
+</div>
+<div class="container text-center d-flex justify-content-center mt-5 pt-5 " ng-hide="signup1">
+    <div class="border border-2 rounded-3 p-4 w-50 nn">
+        <h2>kindly enter your details</h2>
+        <form name="frm" class="mt-3">
+            <div>
+                <label for="signUpEmail" class="me-3">Email Id:</label>
+                <input type="email" class="ms-1" required name="signUpEmail" ng-model="signUpEmail" placeholder="Email">
+                <span ng-show="frm.signUpEmail.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <label for="signUpName">User Name:</label>
+                <input type="text" required name="signUpName" ng-model="signUpName" placeholder="User Name">
+                <span ng-show="frm.signUpName.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <label for="signUpPassword" class="me-2">password:</label>
+                <input type="password" required name="signUpPassword" ng-model="signUpPassword" placeholder="Enter Your UPI">
+                <span ng-show="frm.signUpPassword.$error.required" class="text-danger">*</span>
+            </div>
+            <h5 ng-show="show" class="text-danger mt-2">Please fill all the details</h5>
+            <a class="btn btn-info mt-3" ng-click="confirm()">Sign in</a>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+
+<div class="container text-center  d-flex justify-content-center mt-5 pt-5" ng-init="inited()">
+    <div class="border border-2 rounded-3 p-4 w-50 ">
+        <h2>Login</h2>
+        <form name="frm" class="mt-3">
+            <div>
+                <label for="FirstName" >First Name:</label>
+                <input type="text"  required name="FirstName" ng-model="FirstName">
+                <span ng-show="frm.FirstName.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <label for="LastName" >Last Name:</label>
+                <input type="text"  required name="LastName" ng-model="LastName">
+                <span ng-show="frm.LastName.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <label for="Password">Password:</label>
+                <input type="password" class="ms-2" required name="Password" ng-model="Password">
+                <span ng-show="frm.Password.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <label for="DOB" class="me-4" >Date Of Birth:</label>
+                <input type="date"  required name="DOB" ng-model="DOB">
+                <span ng-show="frm.DOB.$error.required" class="text-danger">*</span>
+            </div>
+            <h5 ng-show="show" class="text-danger mt-2">please all the details correctly</h5>
+            <a class="btn btn-info mt-3" ng-click="login()">Login</a>
+        </form>
+    </div>
+</div>
+

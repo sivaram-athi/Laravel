@@ -1,0 +1,49 @@
+<div class="container ">
+    <div>
+        <button class="btn btn-info float-end " ng-click="logout()">Log Out</button>
+    </div>
+    <div class="mt-4">
+        <h3>Welcome {{name}}</h3>
+        <h2>Balance : {{bal}}</h2> 
+    </div>
+    <div class="mt-5 row border" ng-init="inition()">
+        <div class="col-md-3  text-center p-2 " ng-click="user()">
+            <img class="img-fluid" src="assets/img/photo-1611003228941-98852ba62227.jpg" alt="">
+            <h4 class="text-center">new</h4>
+        </div>
+        <div class="col-md-3   text-center p-2" ng-repeat="x in friends">
+            <img class="img-fluid" src="assets/img/photo-1611003228941-98852ba62227.jpg" alt="">
+            <h4 class="text-center">{{x}}
+                <span><button class="btn btn-success" ng-click="view(x)">view</button></span>
+            </h4>
+        </div>
+    </div>
+    <div class="row border mt-3" ng-show="show1">
+        <div class="col-md-3 mt-3" ng-repeat="x in scope">
+            <img class="img-fluid" src="assets/img/photo-1611003228941-98852ba62227.jpg" alt="">
+            <h4 class="text-center">{{x}}
+                <span><button class="btn btn-success" ng-click="add(x)">add</button></span>
+            </h4>
+        </div>
+    </div>
+    <div class="border w-50 mt-3">
+        <div class="p-3">
+            <form class="text-center">
+                <div>
+                    <label for="mainName">Name</label>
+                    <input type="text" class="ms-4" name="mainName" ng-model="mainName">
+                </div>
+                <div class="mt-2">
+                    <label for="mainAcc">Acc No</label>
+                    <input type="text" class="ms-3" name="mainAcc" ng-model="mainAcc">
+                </div>
+                <div class="mt-2">
+                    <label for="mainAmount">Amount</label>
+                    <input type="text" class="ms-2" name="mainAmount" ng-model="mainAmount">
+                </div>
+                <h5 ng-show="hel" class="text-danger text-center">required</h5>
+                <button class="btn btn-success mt-2" ng-click="transfer()">Transfer</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+body{
+    background: linear-gradient(to bottom right, #FDABDD, #374A5A);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.s{
+    color: white;
+}
+
+.ss:hover{
+    color:  #0E1F40;
+}
+
+.nn{
+    /* background: bisque !important; */
+    filter: drop-shadow(10px 10px 100px #0E1F40);
+    background: linear-gradient(to bottom right, #e064e0, #1d9fa6);
+}
+.sss:hover{
+    background: linear-gradient(to bottom right, #e064e0, #1d9fa6);
+}
+.mm:hover{
+    background: linear-gradient(to bottom left, #646ce0, #0be3ee);
+}
+
+* {
+    box-sizing: border-box;
+}

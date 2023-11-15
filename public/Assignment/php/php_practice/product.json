@@ -1,0 +1,64 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Lamborghini",
+            "img": "assets/img/1.jpg",
+            "price": "2,18,000 $"
+        },
+        {
+            "id": 2,
+            "title": "Audi",
+            "img": "assets/img/2.jpg",
+            "price": "1,61,395 $"
+        },
+        {
+            "id": 3,
+            "title": "Ferrari",
+            "img": "assets/img/3.jpg",
+            "price": "4,29,815 $"
+        },
+        {
+            "id": 4,
+            "title": "Bugatti",
+            "img": "assets/img/4.jpg",
+            "price": "5,379,750 $"
+        },
+        {
+            "id": 5,
+            "title": "Range Rover",
+            "img": "assets/img/5.jpg",
+            "price": "1,00,500 $"
+        },
+        {
+            "id": 6,
+            "title": "Benz",
+            "img": "assets/img/6.jpg",
+            "price": "41,500 $"
+        },
+        {
+            "id": 7,
+            "title": "porsche",
+            "img": "assets/img/7.jpg",
+            "price": "1,03,400 $"
+        },
+        {
+            "id": 8,
+            "title": "McLaren",
+            "img": "assets/img/8.jpg",
+            "price": "3,82,500 $"
+        },
+        {
+            "id": 9,
+            "title": "Audi 911",
+            "img": "assets/img/9.jpg",
+            "price": "1,00,000 $"
+        },
+        {
+            "id": 10,
+            "title": "Ford Mustang",
+            "img": "assets/img/10.jpg",
+            "price": "4,19,500 $"
+        }
+    ]
+}

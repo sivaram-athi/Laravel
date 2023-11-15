@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#!page1">Home</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#!page2">Page 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page3">Page 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page4">Page 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page5">Page 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page6">Page 5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page7">sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!page8">shopping cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1 class="text-center" style="background-color:rgb(48, 163, 85)">welcome to page 1</h1>
+<div class="container" ng-controller="page1">
+    
+    <div>
+        <h1>hello {{name}}</h1>
+        <input type="text">
+        <h1>{{name}}</h1>
+    </div>
+    <div>
+        <input type="button" value="like" ng-click="increment()">
+        <p>{{values}}</p>
+        <input type="button" value="dislike" ng-click="decrement()">
+    </div>
+</div>

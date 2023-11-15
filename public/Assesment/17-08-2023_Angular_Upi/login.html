@@ -1,0 +1,18 @@
+<div class="container text-center d-flex justify-content-center mt-5 pt-5">
+    <div class="border border-2 rounded-3 p-4 w-50 ">
+        <h2>Login</h2>
+        <form name="frm" class="mt-3">
+            <div>
+                <input type="text" required name="loginName" ng-model="loginName" placeholder="name">
+                <span ng-show="frm.loginName.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <input type="text" required name="loginUpi" ng-model="loginUpi" placeholder="UPI">
+                <span ng-show="frm.loginUpi.$error.required" class="text-danger">*</span>
+            </div>
+            <h5 class="text-center text-danger mt-2" ng-show="shw">invalid UserName or Password</h5>
+            <a class="btn btn-primary mt-3" ng-click="signup()">Signup </a>
+            <a class="btn btn-info mt-3" ng-click="login()">Login </a>
+        </form>
+    </div>
+</div>

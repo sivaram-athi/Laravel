@@ -1,0 +1,18 @@
+body{
+    background: seashell;
+}
+
+.cart{
+    width: 100%;
+}
+
+img{
+    height: 145px !important;
+    width: 256px !important;
+}
+input{
+    width: 100%;
+}
+.goto{
+    display: none;
+}

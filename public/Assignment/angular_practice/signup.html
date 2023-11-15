@@ -1,0 +1,24 @@
+<div class="container text-center ss " ng-controller="signup">
+    <a class="btn btn-success n" href="#!page2">Guest user</a>
+    <div class="s">
+        <h2>Sign Up</h2>
+        <form name="frm" class="mt-3">
+            <div>
+                <label for="signUpName" class="me-4">Name:</label>
+                <input type="text" required name="signUpName" ng-model="signUpName">
+                <span ng-show="frm.signUpName.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <label for="signUpPassword">Password:</label>
+                <input type="password" required name="signUpPassword" ng-model="signUpPassword">
+                <span ng-show="frm.signUpPassword.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <label for="signUpEmail" class="me-4">Email:</label>
+                <input type="email" required name="signUpEmail" ng-model="signUpEmail">
+                <span ng-show="frm.signUpEmail.$error.required" class="text-danger">*</span>
+            </div>
+            <a class="btn btn-info mt-3"  ng-click="confirm()">Signup</a>
+        </form>
+    </div>
+</div>

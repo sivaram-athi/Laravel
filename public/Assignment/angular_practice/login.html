@@ -1,0 +1,20 @@
+<div class="container text-center ss " ng-controller="login">
+    <a class="btn btn-success n" href="#!page2">Guest user</a>
+    <div class="s">
+        <h2>Login</h2>
+        <form name="frm" class="mt-3">
+            <div>
+                <label for="loginName" class="me-4">Name:</label>
+                <input type="text" required name="loginName" ng-model="loginName">
+                <span ng-show="frm.loginName.$error.required" class="text-danger">*</span>
+            </div>
+            <div class="mt-3">
+                <label for="loginPassword">Password:</label>
+                <input type="password" required name="loginPassword" ng-model="loginPassword">
+                <span ng-show="frm.loginPassword.$error.required" class="text-danger">*</span>
+            </div>
+            <a class="btn btn-primary mt-3" ng-click="signup()">Signup </a>
+            <a class="btn btn-info mt-3" ng-click="login()">Login </a>
+        </form>
+    </div>
+</div>

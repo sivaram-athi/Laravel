@@ -1,0 +1,86 @@
+body {
+    background: #008080;
+}
+
+.hell {
+    margin-top: 250px;
+    padding: 100px !important;
+}
+
+.hell1 {
+    margin-top: 150px !important;
+    padding: 100px !important;
+}
+
+.hell2 {
+    /* margin-top: 150px !important;
+    padding: 100px !important; */
+    height: 500px !important;
+    overflow-y: scroll;
+}
+
+.in {
+    height: 60px;
+    /* width: 400px !important; */
+}
+
+.one:hover {
+    color: rgb(255, 196, 0) !important;
+}
+
+.two:hover {
+    color: rgb(10, 202, 236) !important;
+}
+
+.three:hover {
+    color: rgb(236, 10, 10) !important;
+}
+
+.hel {
+    background: white !important;
+    /* width: 800px !important; */
+    height: 300px;
+    padding: 50px !important;
+    /* margin-left: 120px; */
+}
+
+img {
+    height: 200px !important;
+}
+
+.image {
+    height: 100px !important;
+    width: 200px !important;
+}
+
+* {
+    box-sizing: border-box;
+    /* width: 100%; */
+}
+
+.nas {
+    color: rgb(10, 202, 236) !important;
+}
+
+.tble {
+    height: 500px !important;
+    overflow-y: scroll;
+}
+
+
+.glow {
+    /* font-size: 80px; */
+    /* color: #1cc9c0 !important; */
+    /* text-align: center; */
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}

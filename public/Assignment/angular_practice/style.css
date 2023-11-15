@@ -1,0 +1,36 @@
+.s{
+    border: 1px solid black;
+    width:580px;
+    border-radius: 2%;
+    padding: 20px;
+
+}
+.ss{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+/* .ss{
+    margin-left: 500px !important;
+    margin-top: 250px !important;
+} */
+/* .n{
+    margin-right: 700px;
+    margin-bottom: 20px;
+} */
+
+#displayColor {
+    width: 100%;
+    height: 100%;
+    /* float: right;     */
+    text-align: center;
+}
+
+.sss{
+    height:200px;
+    width: 430px;
+}

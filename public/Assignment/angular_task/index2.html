@@ -1,0 +1,30 @@
+<div class="container mt-5">
+    <button class="btn btn-info float-end mb-5" ng-click="logout()">Log Out</button>
+    <div>
+        <h2 class="text-center mt-5">hello <span class="text-light">{{firstName}}</span></h2>
+        <table class="table table-bordered text-center">
+            <thead>
+
+                <tr>
+                    <!-- <th>s.no</th> -->
+                    <th scope="col">
+                        <h2>Loan</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="x in sample">
+
+                <tr>
+                    <!-- <td><span>{{$index +1}}</span></td> -->
+                    <td>
+                        <h2 class="text-light">{{x}}</h2>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center">
+            <button class="btn btn-info " ng-click="button1()">1</button>
+            <button class="btn btn-info " ng-click="button2()">2</button>
+        </div>
+    </div>
+</div>

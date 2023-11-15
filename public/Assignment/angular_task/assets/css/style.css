@@ -1,0 +1,17 @@
+/* .s{
+    border: 1px solid black;
+    width:580px;
+    border-radius: 2%;
+    padding: 20px;
+}
+
+.ss{
+    margin-left: 600px !important;
+    margin-top: 250px !important;
+} */
+
+body{
+    background: linear-gradient(to bottom right, #FDABDD, #374A5A);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

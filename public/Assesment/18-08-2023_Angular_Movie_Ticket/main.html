@@ -1,0 +1,114 @@
+<div class="container mt-5">
+    <a class="btn btn-info mm float-end" ng-click="logout()">logout </a>
+    <div>
+        <h2>Welcome {{name}}</h2>
+    </div>
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-primary mt-3 mm w-25" ng-click="show()">show </a>
+        <a class="btn btn-primary mt-3 mm w-25 ms-2" ng-click="bevarage()">Bevarage </a>
+    </div>
+    <div class="mt-5" ng-show="show1">
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">
+                        <h4>Movie</h4>
+                    </th>
+                    <th scope="col">
+                        <h4>Time</h4>
+                    </th>
+                    <th scope="col">
+                        <h4>Tickets Available</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="s">
+                <tr class="text-center" ng-repeat="x in movie" ng-click="move(x)">
+                    <td class="ss">
+                        <h6>{{x.movie}}</h6>
+                    </td>
+                    <td>
+                        <h6>{{x.time}}</h6>
+                    </td>
+                    <td>
+                        <h6>{{x.tickets}}</h6>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center" ng-show="dummy">
+            <div>
+                <h4>Select Number Of Tickets for {{gg}}</h4>
+            </div>
+            <div class="mt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>{{ticketRate}}</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>X</h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5><input type="number" min="0" ng-click="add()" ng-model="tick"></h5>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>{{totalPrice}}</h5>
+                    </div>
+                </div>
+            </div>
+            <h4 ng-hide="error" class="mt-4 text-danger">Available Ticket Level Exited</h4>
+
+            <div class="mt-4">
+                <h5>Ticket Amount : {{totalPrice}}</h5>
+                <h5>Bevarage : {{fun}}</h5>
+                <h5>Total : {{totalPrice + fun}}</h5>
+            </div>
+            <h5 ng-show="pay" class="text-center text-danger"> Please add a movie ticket</h5>
+            <div class="mt-4">
+                <a class="btn btn-primary mt-3 mm" ng-click="last()">pay </a>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5" ng-show="bevarage1">
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col">
+                        <h4>Item</h4>
+                    </th>
+                    <th scope="col">
+                        <h4>Rate</h4>
+                    </th>
+                    <th scope="col">
+                        <h4>Quantity</h4>
+                    </th>
+                    <th scope="col">
+                        <h4>Quantity</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center" ng-repeat="x in main">
+                    <td>
+                        <h6>{{x.item}}</h6>
+                    </td>
+                    <td>
+                        <h6>{{x.rate}}</h6>
+                    </td>
+                    <td>
+                        <h6><input type="number" ng-click="tot()" min="0" ng-model="x.quantity"></h6>
+                    </td>
+                    <td>
+                        <h6 id="n">{{x.quantity*x.rate}}</h6>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <h5>Bevarage total :{{fun}}</h5>
+        </div>
+        <div class="text-center">
+            <a class="btn btn-primary mt-3  mm" ng-click="select()">select </a>
+        </div>
+    </div>
+</div>

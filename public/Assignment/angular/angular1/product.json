@@ -1,0 +1,64 @@
+{
+    "shopping": [
+        {
+            "id": 1,
+            "title": "Cd Drive",
+            "img": "assets/img/cd-drive.jpg",
+            "price": 2000
+        },
+        {
+            "id": 2,
+            "title": "Cpu",
+            "img": "assets/img/cpu.jpg",
+            "price": 3000
+        },
+        {
+            "id": 3,
+            "title": "Laptop",
+            "img": "assets/img/laptop.jpg",
+            "price": 5000
+        },
+        {
+            "id": 4,
+            "title": "Pendrive",
+            "img": "assets/img/pendrive.jpg",
+            "price": 1000
+        },
+        {
+            "id": 5,
+            "title": "Phone",
+            "img": "assets/img/phone.jpg",
+            "price": 10000
+        },
+        {
+            "id": 6,
+            "title": "Headphone",
+            "img": "assets/img/headphone.jpg",
+            "price": 800
+        },
+        {
+            "id": 7,
+            "title": "Watch",
+            "img": "assets/img/watch.jpg",
+            "price": 4000
+        },
+        {
+            "id": 8,
+            "title": "Computer",
+            "img": "assets/img/computer.jpg",
+            "price": 30000
+        },
+        {
+            "id": 9,
+            "title": "Mouse",
+            "img": "assets/img/mouse.jpg",
+            "price": 300
+        },
+        {
+            "id": 10,
+            "title": "Keyboard",
+            "img": "assets/img/keyboard.jpg",
+            "price": 800
+        }
+    ]
+}

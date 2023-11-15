@@ -1,0 +1,16 @@
+/* #secondDiv{
+    margin-left: 670px;
+} */
+body {
+    background: linear-gradient(rgb(100, 100, 255), rgb(127, 255, 254));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#secondDiv {
+    margin-left: 600px;
+}
+
+#firstDiv {
+    margin-right: 0px !important;
+}

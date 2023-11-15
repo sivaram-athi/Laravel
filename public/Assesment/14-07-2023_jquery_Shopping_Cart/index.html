@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Assesment</title>
+    <link rel="stylesheet" href="assets/css/cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+
+<body>
+    
+    <div class="pt-5 ">
+        <h2 class="text-center ">Product Purchase</h2>
+    </div>
+    <div class="pt-5 text-center">
+        <button type="button"  id="addProduct" class="btn btn-info text-center">add Product</button>
+    </div>
+    <div class="container pt-5" id="addProductContainer">
+        <p id="errorMsg" class="text-danger"></p>
+        <input type="text" class="form-control mt-2" id="addId" placeholder="ID">
+        <input type="text" class="form-control mt-2" id="addTitle" placeholder="Title">
+        <input type="text" class="form-control mt-2" id="addImg" placeholder="Img Link">
+        <input type="text" class="form-control mt-2" id="addPrice" placeholder="Price">
+        <button type="button" id="add" class="btn btn-info mt-2">Add</button>
+        <button type="button" id="addBack" class="btn btn-danger mt-2">Back</button>
+    </div>
+    <div id="container-1">
+        <div class="pt-5 container-fluid p-5">
+            <div class="row d-flex justify-content-evenly" id="result">
+            </div>
+        </div>
+        <div class="text-center ">
+            <button type="button" id="goto" class="btn btn-success">Go to Cart</button>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div id="container-2">
+            <div class="row" id="result2">
+                
+            </div>
+            <div class="text-center p-3">
+                <button type="button" id="back" class="btn btn-danger">Back</button>
+                <button type="button" id="buy" class="btn btn-success">Buy</button>
+            </div>
+            <h3 id="error" class="p-3 text-center text-danger"></h3>
+        </div>
+    </div>
+    <div id="container">
+        <div id="container-3" class="text-center p-5">
+            <h2>Transaction Successfully</h2>
+            <p class="balanceamount"></p>
+        </div>
+    </div>
+    
+
+    <script src="assets/js/lib/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="assets/js/cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

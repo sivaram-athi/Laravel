@@ -1,0 +1,19 @@
+body{
+    background: linear-gradient(to bottom right, #FDABDD, #374A5A);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img{
+    height: 240px !important;
+    width: 250PX;
+    border-radius: 50%;
+}
+
+/* .sss:hover{
+    background: linear-gradient(to bottom right, #FF3E9D, #0E1F40);
+} */
+
+* {
+    box-sizing: border-box;
+}

@@ -1,0 +1,34 @@
+.one{
+    border :5px solid white;
+    height: 10vh;
+    border-top:none ;
+}
+.two{
+    border :5px solid white;
+    border-left: none;
+    height: 10vh;
+    border-top:none ;
+}
+.three{
+    border :5px solid white;
+    border-left: none;
+    height: 10vh;
+    border-top:none ;
+}
+.four{
+    border :5px solid white;
+    border-top:none ;
+    border-left:none ;
+    height: 20vh;
+}
+.five{
+    border :5px solid white;
+    border-top:none ;
+    height: 10vh;
+}
+.six{
+    border :5px solid white;
+    height: 10vh;
+    border-right:none ;
+    border-left:none ;
+}

@@ -1,0 +1,94 @@
+{
+    "details": [
+        {
+            "firstName": "Athi",
+            "lastName": "s",
+            "password": "123456",
+            "dateOfBirth": "22-07-2001",
+            "loans": [
+                "house loan",
+                "car loan",
+                "bike loan",
+                "personal loan",
+                "medical loan",
+                "medical 1 loan",
+                "personal 1 loan",
+                "bike 1 loan",
+                "car 1 loan",
+                "house 1 loan"
+            ]
+        },
+        {
+            "firstName": "Siva",
+            "lastName": "s",
+            "password": "123456",
+            "dateOfBirth": "22-07-2001",
+            "loans": [
+                "house loan",
+                "car loan",
+                "bike loan",
+                "personal loan",
+                "medical loan",
+                "medical 1 loan",
+                "personal 1 loan",
+                "bike 1 loan",
+                "car 1 loan",
+                "house 1 loan"
+            ]
+        },
+        {
+            "firstName": "Ram",
+            "lastName": "s",
+            "password": "123456",
+            "dateOfBirth": "22-07-2001",
+            "loans": [
+                "house loan",
+                "car loan",
+                "bike loan",
+                "personal loan",
+                "medical loan",
+                "medical 1 loan",
+                "personal 1 loan",
+                "bike 1 loan",
+                "car 1 loan",
+                "house 1 loan"
+            ]
+        },
+        {
+            "firstName": "bharat",
+            "lastName": "s",
+            "password": "123456",
+            "dateOfBirth": "12-09-2000",
+            "loans": [
+                "house loan",
+                "car loan",
+                "bike loan",
+                "personal loan",
+                "medical loan",
+                "medical 1 loan",
+                "personal 1 loan",
+                "bike 1 loan",
+                "car 1 loan",
+                "house 1 loan"
+            ]
+        },
+        {
+            "firstName": "balaji",
+            "lastName": "v",
+            "password": "123456",
+            "dateOfBirth": "08-06-2001",
+            "loans": [
+                "house loan",
+                "car loan",
+                "bike loan",
+                "personal loan",
+                "medical loan",
+                "medical 1 loan",
+                "personal 1 loan",
+                "bike 1 loan",
+                "car 1 loan",
+                "house 1 loan"
+            ]
+        }
+    ]
+}

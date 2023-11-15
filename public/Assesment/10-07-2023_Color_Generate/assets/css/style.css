@@ -1,0 +1,44 @@
+body {
+    margin-top: 50px !important;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#displayColor {
+    width: 80%;
+    height: 100%;
+    float: right;
+    text-align: center;
+}
+
+.buton {
+    padding: 10px 245px;
+}
+
+.buton1 {
+    padding: 10px 0px 10px 160px;
+}
+
+.main-box {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+li {
+    list-style: none;
+    border: 1px solid gray !important;
+    border-radius: 5px !important;
+    text-align: center;
+    padding: 10px;
+}
+
+ul {
+    padding-bottom: 20px;
+    padding-right: 2rem;
+}
+
+input {
+    width: 100px;
+}
